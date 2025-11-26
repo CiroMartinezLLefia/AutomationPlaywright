@@ -4,7 +4,7 @@ import { credentials } from "/Users/cmartinezm/Desktop/AutomationPlaywright/comp
 
 export class checkout {
   readonly openPage: openPages;
-  readonly credentialHolder: credentials;
+  readonly credentialHolder = credentials;
   readonly page: Page;
 
   readonly checkOutBtn: Locator;
@@ -24,7 +24,6 @@ export class checkout {
 
   constructor(page: Page) {
     this.openPage = new openPages(page);
-    this.credentialHolder = new credentials(page);
     this.page = page;
 
     // LOCATORS
@@ -60,7 +59,6 @@ export class checkout {
     await this.signUpBtn.click();
   }
 
-  // Verifies credentials.ts (TODO: Move credentials.ts to .env)
   async verifyCheckOut() {
     await expect(
       this.page.getByText(this.credentialHolder.name).first()
@@ -90,7 +88,7 @@ export class checkout {
     await this.commentArea.fill("Lorem Ipsum Dolor");
     await this.placeOrderBtn.click();
 
-    // Fills based on credentials.ts (TODO: Move credentials.ts to .env)
+    // Fills based on .env
     await this.nameOnCardInput.fill(this.credentialHolder.nameOnCard);
     await this.cardNumberInput.fill(this.credentialHolder.cardNumber);
     await this.cvcInput.fill(this.credentialHolder.cvc);

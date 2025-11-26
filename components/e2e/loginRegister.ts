@@ -4,7 +4,7 @@ import { credentials } from "/Users/cmartinezm/Desktop/AutomationPlaywright/comp
 
 export class loginRegister {
   readonly openPage: openPages;
-  readonly credentialHolder: credentials;
+  readonly credentialHolder = credentials;
   readonly page: Page;
 
   readonly signBtn: Locator;
@@ -37,7 +37,6 @@ export class loginRegister {
 
   constructor(page: Page) {
     this.openPage = new openPages(page);
-    this.credentialHolder = new credentials(page);
     this.page = page;
 
     // LOCATORS
@@ -76,7 +75,7 @@ export class loginRegister {
     this.deleteAccountBtn = page.locator("//a[@href='/delete_account']");
   }
 
-  // Fills signUp page with credentials.ts (TODO: Move credentials.ts to .env)
+  // Fills signUp page with .env
   async signUp() {
     await this.nameSignUp.fill(this.credentialHolder.username);
     await this.emailSignUp.fill(this.credentialHolder.email);
@@ -139,7 +138,7 @@ export class loginRegister {
     ).toBeVisible();
   }
 
-  // Fills logIn page with credentials.ts (TODO: Move credentials.ts to .env)
+  // Fills logIn page with .env
   async logIn() {
     await expect(
       this.page.getByRole("heading", { name: "New User Signup!" })

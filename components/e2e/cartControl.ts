@@ -5,7 +5,7 @@ import { credentials } from "/Users/cmartinezm/Desktop/AutomationPlaywright/comp
 
 export class cartControl {
   readonly openPage: openPages;
-  readonly credentialHolder: credentials;
+  readonly credentialHolder = credentials;
   readonly verification: verify;
   readonly page: Page;
 
@@ -38,7 +38,6 @@ export class cartControl {
 
   constructor(page: Page) {
     this.openPage = new openPages(page);
-    this.credentialHolder = new credentials(page);
     this.verification = new verify(page);
     this.page = page;
 
