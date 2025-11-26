@@ -187,9 +187,4 @@ export class loginRegister {
 
     await this.continueAccountBtn.click();
   }
-
-  // OBSOLETE ASYNC
-  async verifyData() {
-    await expect(this.page.getByText("Men Tshirt").first()).toBeVisible();
-  }
 }
