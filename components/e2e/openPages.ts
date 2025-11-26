@@ -1,9 +1,7 @@
 import { expect, type Locator, type Page } from "@playwright/test";
-import { loginRegister } from "/Users/cmartinezm/Desktop/AutomationPlaywright/components/e2e/loginRegister.ts";
 
 export class openPages {
   readonly page: Page;
-  readonly signOrDel: loginRegister;
   readonly homeBtn: Locator;
   readonly productsBtn: Locator;
   readonly cartBtn: Locator;
@@ -14,7 +12,6 @@ export class openPages {
   readonly contactUsBtn: Locator;
 
   constructor(page: Page) {
-    this.signOrDel = new loginRegister(page);
     this.page = page;
 
     // LOCATORS
@@ -32,14 +29,9 @@ export class openPages {
 
   // Abre automation exercise
   async goto() {
-    await this.page.goto("http://automationexercise.com");
+    await this.homeBtn.first().click();
 
     await expect(this.page).toHaveTitle("Automation Exercise");
-  }
-
-  // Opens Home Page
-  async openHomePage() {
-    await this.homeBtn.click();
   }
 
   // Opens Products Page

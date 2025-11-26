@@ -1,6 +1,10 @@
 import { test } from "@playwright/test";
 import { verify } from "/Users/cmartinezm/Desktop/AutomationPlaywright/components/e2e/verify.ts";
 
+test.beforeEach("Setup", async ({ page }) => {
+  await page.goto("http://automationexercise.com");
+});
+
 test("Test Case 7: Verify test cases", async ({ page }) => {
   const verifyPage = new verify(page);
 

@@ -1,6 +1,10 @@
 import { test } from "@playwright/test";
 import { scrollUp } from "/Users/cmartinezm/Desktop/AutomationPlaywright/components/e2e/scrollUp.ts";
 
+test.beforeEach("Setup", async ({ page }) => {
+  await page.goto("http://automationexercise.com");
+});
+
 test("Test Case 25: Verify Scroll Up using arrow", async ({ page }) => {
   const scroll = new scrollUp(page);
 

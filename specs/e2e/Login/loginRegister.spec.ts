@@ -1,6 +1,10 @@
 import { test } from "@playwright/test";
 import { loginRegister } from "/Users/cmartinezm/Desktop/AutomationPlaywright/components/e2e/loginRegister.ts";
 
+test.beforeEach("Setup", async ({ page }) => {
+  await page.goto("http://automationexercise.com");
+});
+
 test("Test Case 1: sign in and delete", async ({ page }) => {
   const loginReg = new loginRegister(page);
 

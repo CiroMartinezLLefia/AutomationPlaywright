@@ -3,6 +3,10 @@ import { cartControl } from "/Users/cmartinezm/Desktop/AutomationPlaywright/comp
 import { checkout } from "/Users/cmartinezm/Desktop/AutomationPlaywright/components/e2e/checkout.ts";
 import { loginRegister } from "/Users/cmartinezm/Desktop/AutomationPlaywright/components/e2e/loginRegister.ts";
 
+test.beforeEach("Setup", async ({ page }) => {
+  await page.goto("http://automationexercise.com");
+});
+
 test("Test Case 12: Add products to cart", async ({ page }) => {
   const cart = new cartControl(page);
 
