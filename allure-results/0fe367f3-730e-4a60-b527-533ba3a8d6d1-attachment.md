@@ -1,0 +1,125 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e5]:
+      - link "Website for automation practice" [ref=e8]:
+        - /url: /
+        - img "Website for automation practice" [ref=e9]
+      - list [ref=e12]:
+        - listitem [ref=e13]:
+          - link " Home" [ref=e14]:
+            - /url: /
+            - generic [ref=e15]: 
+            - text: Home
+        - listitem [ref=e16]:
+          - link " Products" [ref=e17]:
+            - /url: /products
+            - generic [ref=e18]: 
+            - text: Products
+        - listitem [ref=e19]:
+          - link " Cart" [ref=e20]:
+            - /url: /view_cart
+            - generic [ref=e21]: 
+            - text: Cart
+        - listitem [ref=e22]:
+          - link " Logout" [ref=e23]:
+            - /url: /logout
+            - generic [ref=e24]: 
+            - text: Logout
+        - listitem [ref=e25]:
+          - link " Delete Account" [ref=e26]:
+            - /url: /delete_account
+            - generic [ref=e27]: 
+            - text: Delete Account
+        - listitem [ref=e28]:
+          - link " Test Cases" [ref=e29]:
+            - /url: /test_cases
+            - generic [ref=e30]: 
+            - text: Test Cases
+        - listitem [ref=e31]:
+          - link " API Testing" [ref=e32]:
+            - /url: /api_list
+            - generic [ref=e33]: 
+            - text: API Testing
+        - listitem [ref=e34]:
+          - link " Video Tutorials" [ref=e35]:
+            - /url: https://www.youtube.com/c/AutomationExercise
+            - generic [ref=e36]: 
+            - text: Video Tutorials
+        - listitem [ref=e37]:
+          - link " Contact us" [ref=e38]:
+            - /url: /contact_us
+            - generic [ref=e39]: 
+            - text: Contact us
+        - listitem [ref=e40]:
+          - generic [ref=e41]:
+            - generic [ref=e42]: 
+            - text: Logged in as cmartinezm
+  - generic [ref=e44]:
+    - list [ref=e46]:
+      - listitem [ref=e47]:
+        - link "Home" [ref=e48]:
+          - /url: /
+      - listitem [ref=e49]: Shopping Cart
+    - generic [ref=e54] [cursor=pointer]: Proceed To Checkout
+    - table [ref=e56]:
+      - rowgroup [ref=e57]:
+        - row "Item Description Price Quantity Total" [ref=e58]:
+          - cell "Item" [ref=e59]
+          - cell "Description" [ref=e60]
+          - cell "Price" [ref=e61]
+          - cell "Quantity" [ref=e62]
+          - cell "Total" [ref=e63]
+          - cell [ref=e64]
+      - rowgroup [ref=e65]:
+        - row "Product Image Blue Top Women > Tops Rs. 500 2 Rs. 1000 " [ref=e66]:
+          - cell "Product Image" [ref=e67]:
+            - link "Product Image" [ref=e68]:
+              - /url: ""
+              - img "Product Image" [ref=e69]
+          - cell "Blue Top Women > Tops" [ref=e70]:
+            - heading "Blue Top" [level=4] [ref=e71]:
+              - link "Blue Top" [ref=e72]:
+                - /url: /product_details/1
+            - paragraph [ref=e73]: Women > Tops
+          - cell "Rs. 500" [ref=e74]:
+            - paragraph [ref=e75]: Rs. 500
+          - cell "2" [ref=e76]:
+            - button "2" [ref=e77] [cursor=pointer]
+          - cell "Rs. 1000" [ref=e78]:
+            - paragraph [ref=e79]: Rs. 1000
+          - cell "" [ref=e80]:
+            - generic [ref=e82] [cursor=pointer]: 
+        - row "Product Image Sleeves Top and Short - Blue & Pink Kids > Dress Rs. 478 2 Rs. 956 " [ref=e83]:
+          - cell "Product Image" [ref=e84]:
+            - link "Product Image" [ref=e85]:
+              - /url: ""
+              - img "Product Image" [ref=e86]
+          - cell "Sleeves Top and Short - Blue & Pink Kids > Dress" [ref=e87]:
+            - heading "Sleeves Top and Short - Blue & Pink" [level=4] [ref=e88]:
+              - link "Sleeves Top and Short - Blue & Pink" [ref=e89]:
+                - /url: /product_details/16
+            - paragraph [ref=e90]: Kids > Dress
+          - cell "Rs. 478" [ref=e91]:
+            - paragraph [ref=e92]: Rs. 478
+          - cell "2" [ref=e93]:
+            - button "2" [ref=e94] [cursor=pointer]
+          - cell "Rs. 956" [ref=e95]:
+            - paragraph [ref=e96]: Rs. 956
+          - cell "" [ref=e97]:
+            - generic [ref=e99] [cursor=pointer]: 
+  - contentinfo [ref=e100]:
+    - generic [ref=e105]:
+      - heading "Subscription" [level=2] [ref=e106]
+      - generic [ref=e107]:
+        - textbox "Your email address" [ref=e108]
+        - button "" [ref=e109] [cursor=pointer]:
+          - generic [ref=e110]: 
+        - paragraph [ref=e111]:
+          - text: Get the most recent updates from
+          - text: our site and be updated your self...
+    - paragraph [ref=e115]: Copyright © 2021 All rights reserved
+  - text: 
+```

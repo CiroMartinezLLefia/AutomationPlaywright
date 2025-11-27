@@ -1,0 +1,2 @@
+locator('//tr[@id=\'product-1\']')
+locator('//tr[@id=\'product-16\']')
