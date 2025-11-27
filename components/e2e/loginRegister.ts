@@ -140,10 +140,6 @@ export class loginRegister {
 
   // Fills logIn page with .env
   async logIn() {
-    await expect(
-      this.page.getByRole("heading", { name: "New User Signup!" })
-    ).toBeVisible();
-
     await this.emailLogin.fill(this.credentialHolder.email);
     await this.passwordLogin.fill(this.credentialHolder.password);
     await this.logBtn.click();

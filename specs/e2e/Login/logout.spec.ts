@@ -1,7 +1,7 @@
 import { test } from "@playwright/test";
 import { loginRegister } from "/Users/cmartinezm/Desktop/AutomationPlaywright/components/e2e/loginRegister.ts";
 
-test.beforeAll("Setup", async ({ page }) => {
+test.beforeEach("Setup", async ({ page }) => {
   await page.goto("http://automationexercise.com");
 });
 
